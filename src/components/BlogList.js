@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BlogList = ({ blogs, title, handleDelete }) => {
+const BlogList = ({ blogs, title }) => {
 
   //We don't create the function for the button here because we shouldn't edit the props directly. The data is initialized in the Home.js component. We need to use the method 'setBlogs' in Home.js to update the state. So, we create the function in Home.js and then we pass it here as a prop. 
 
@@ -11,7 +11,6 @@ const BlogList = ({ blogs, title, handleDelete }) => {
         <div className='blog-preview' key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-          <button onClick={() => handleDelete(blog.id)}>Delete Blog</button>
         </div>
       ))}
 
