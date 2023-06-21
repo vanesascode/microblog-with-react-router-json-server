@@ -5,7 +5,7 @@ const Create = () => {
   //Controlled Inputs: 
   const [title, setTitle] = useState(' ');
   const [body, setBody] = useState(' ');
-  const [author, setAuthor] = useState('Mario');
+  const [author, setAuthor] = useState('Sarah');
   const [isPending, setIsPending] = useState(false);
 
   //Submit Event:
@@ -36,7 +36,10 @@ const Create = () => {
 
   return (
     <div className='create'>
-      <h2>Add a New Blog</h2>
+      <div className='create.header'>
+        <h2>Add a New Blog<span style={{ marginLeft: '10px' }}><i class="fa-solid fa-sun" style={{ color: 'gold' }} ></i></span></h2>
+
+      </div>
       <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
         <input
@@ -53,8 +56,8 @@ const Create = () => {
         ></textarea>
         <select value={author}
           onChange={(e) => setAuthor(e.target.value)}>
-          <option value='mario'>Mario</option>
-          <option value='Yoshi'>Yoshi</option>
+          <option value='Sarah'>Sarah</option>
+          <option value='Laura'>Laura</option>
         </select>
         {!isPending && <button>Add Blog</button>}
         {isPending && <button>Adding Blog...</button>}

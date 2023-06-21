@@ -13,7 +13,7 @@ const Home = () => {
       {error && <div>{error}</div>}
       {isLoading && <p>Loading...</p>}
       {blogs && <BlogList blogs={blogs} title='All Blogs' />}
-      {blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === 'mario'))} title="Mario's Blog" />}
+      {/* {blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === 'Sarah'))} title="Latest Blog" />} */}
     </div>
   )
 }

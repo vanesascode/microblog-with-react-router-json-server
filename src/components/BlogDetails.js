@@ -27,8 +27,9 @@ const BlogDetails = () => {
           <h2>{id}.  {blog.title}</h2>
           <p>Written by {blog.author}</p>
           <div>{blog.body}</div>
-          <div className='blogs-details-button-div'>
+          <div className='erase-button-container'>
             <button onClick={handleClick}>Delete</button>
+
           </div>
         </article>
       )}

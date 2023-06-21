@@ -28,7 +28,7 @@ function App() {
 
       <div className='footer'>
         <div className='by-container'>
-          <p>By <a href='https://github.com/vanesascode' target='_blank' rel='noreferrer'>vanesascode</a></p>
+          <p>By <a href='https://github.com/vanesascode' target='_blank' rel='noreferrer' className='signature'>vanesascode</a></p>
         </div>
       </div>
 
