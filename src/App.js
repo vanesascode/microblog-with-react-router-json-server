@@ -25,9 +25,13 @@ function App() {
           </Routes>
         </div>
       </div>
+
       <div className='footer'>
-        <p>By <a href='https://github.com/vanesascode' target='_blank' rel='noreferrer'>vanesascode</a></p>
+        <div className='by-container'>
+          <p>By <a href='https://github.com/vanesascode' target='_blank' rel='noreferrer'>vanesascode</a></p>
+        </div>
       </div>
+
     </Router>
   );
 }
