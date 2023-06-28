@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
 
-  const [data, setData] = useState(null) //After the first render, the state will be null! so, below we {blogs && <BlogList blogs={blogs} title='All Blogs' />} so the right part waits until the data is loaded.
+  const [data, setData] = useState(null) //After the first render, the state will be null! so, below we set {blogs && <BlogList blogs={blogs} title='All Blogs' />} in the Home.js, so the right part waits until the data is loaded.
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -24,9 +24,9 @@ const useFetch = (url) => {
         })
     }, 1000);
 
-  }, [url])// the array of dependencies, empty so it acts once after the first render. Or, we the url, so, everytime the url changes, the data gets loaded, but not when other changes happen. 
+  }, [url])// The array of dependencies, empty so it acts only once after the first render. Or, we put the url, so, everytime the url changes, the data gets loaded, but not when other changes happen. 
 
-  return { data, isLoading, error } //we are exporting the values we want to get when we invoke our custom hook 'useFetch'. It could also be an array with each state in an index, but being in an object it doesn't matter the order. 
+  return { data, isLoading, error } //We are exporting the values we want to get when we invoke our custom hook 'useFetch'. It could also be an array with each state in an index, but being in an object it doesn't matter the order. 
 }
 
 export default useFetch;

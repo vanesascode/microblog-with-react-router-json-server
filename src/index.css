@@ -108,7 +108,7 @@ button:hover,
 
 /* blog details page*/
 .blog-details h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: #0c9a5a;
   margin-bottom: 10px;
 }
@@ -120,6 +120,12 @@ button:hover,
 .erase-button-container {
   width: 100%;
   text-align: center;
+}
+
+.date {
+  font-size: 13px;
+  color: rgb(98, 97, 97);
+  margin-top: 5px;
 }
 
 /* create new blog form */
