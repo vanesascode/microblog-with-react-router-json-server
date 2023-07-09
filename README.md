@@ -3,8 +3,8 @@
 When you load the project in your VS CODE, you must:
 
 - [x] run `npm instal` (to download the packages that the package.json indicates)
-- [ ] run `npx json-server --watch data/db.json --port 8000` (to have the fake REST API running)
-- [ ] run `npm start` in another terminal. 
+- [x] run `npx json-server --watch data/db.json --port 8000` (to have the fake REST API running)
+- [x] run `npm start` in another terminal. 
 
 ***
 
