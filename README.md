@@ -1,13 +1,16 @@
 # Microblog using REACT, REACT ROUTER, and a fake REST API using JSON SERVER
 
-When you load the project in your VS CODE, you must run: 
-### `npx json-server --watch data/db.json --port 8000`
-This way, you have the fake REST API running. 
+When you load the project in your VS CODE, you must:
 
+- [x] run `npm instal` (to download the packages that the package.json indicates)
+- [ ] run `npx json-server --watch data/db.json --port 8000` (to have the fake REST API running)
+- [ ] run `npm start` in another terminal. 
+
+***
 
 https://github.com/vanesascode/Microblog-with-REACT/assets/131259155/dfbed416-4834-48e8-a202-16388aa6a21a
 
-
+***
 The code is full of learning notes. I left them because they helped me when learning and help me revise when I need them. Hopefully they help you too. 
 
 ## Features of 'Your Microblog':
